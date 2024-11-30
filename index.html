@@ -1,0 +1,437 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWave</title>
+
+    <!--link to CSS file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+ </head>
+
+ <body>
+    <header>
+        <a href="#" class="logo"><i class='fas fa-globe-americas'></i> WanderWave</a>
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#dishes">Packages</a>
+            <a href="#about">About</a>
+            <a href="#menu">Best-selling</a>
+            <a href="#deal">Deal</a>
+            <a href="#review">Review</a>
+            <a href="#order">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    </header>
+
+    <!---search section-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name=" " id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Best Places</h3>
+                        <p>Explore the best places in the world, from the Eiffel Tower in Paris and the Old World Charm of Vietnam to the serene Maldives and vibrant Tokyo. Marvel at natural wonders like the Lost Empire and the Eternal City, or wander through historic sites like Costa Rica and Rome's Colosseum. For adventure, head to New Zealand, and for culture, explore Madurai - Temple City. Each destination promises unforgettable memories.</p>
+                        <a href="#dishes" class="btn">Explore!</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/slider1.jpg" alt="couple">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Premium Packages</h3>
+                        <p>Indulge in premium travel packages designed for unforgettable luxury experiences. Explore exotic destinations with curated itineraries, five-star accommodations, and personalized services. From romantic honeymoons in the Maldives to adventurous Cape Town in Africa or cultural tours in Italy, these packages ensure a seamless blend of exploration. Enjoy exclusive perks like private transfers and guided tours.</p>
+                        <a href="#dishes" class="btn">Explore!</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/slider2.jpg" alt="friends">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Smart Travel Guide</h3>
+                        <p>Discover the ultimate travel guide tailored to make your adventures unforgettable! Whether you dream of serene beaches, bustling cities, or tranquil mountains, this guide provides expert recommendations, hidden gems, and insider tips to help you explore the world like never before. With curated itineraries, must-visit attractions, and practical advice for seamless travel, it ensures every journey is memorable.</p>
+                        <a href="#dishes" class="btn">Explore!</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/slider3.jpg" alt="travel">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--Accessories section-->
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Popular Packages</h3>
+        <h1 class="heading">Premium Travel Categories!</h1>
+        <div class="box-container">
+            <div class="box">
+                <img class="pic4" src="image/honeymoon.jpg" alt="">
+                <a href="honeymoon.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Honeymoon Package</h3>
+            </div>
+            <div class="box">
+                <img class="pic5" src="image/friends.jpg" alt="">
+                <a href="friends.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Friends Trip Package</h3>
+            </div>
+            <div class="box">
+                <img class="pic6" src="image/family.jpg" alt="">
+                <a href="family.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Family Vaccation Package</h3>
+            </div>
+            <div class="box">
+                <img class="pic7" src="image/adventure.jpg" alt="">
+                <a href="adventure.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Adventure Seekers Package</h3>
+            </div>
+            <div class="box">
+                <img class="pic8" src="image/culturalExploration.jpg" alt="">
+                <a href="cultural.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Cultural Exploration Package</h3>
+            </div>
+            <div class="box">
+                <img class="pic9" src="image/spa.jpg" alt="">
+                <a href="spa.html" class="hover-btn" target="_blank">Explore Destinations</a>
+                <h3>Welness and Spa Retreat Package</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--about section-->
+    <section class="about" id="about">
+        <h3 class="sub-heading"> About us</h3>
+        <h1 class="heading"> Why choose us?</h1>
+        <div class="row">
+            <div class="content">
+                <h3>Best wander partner in the country!</h3>
+                <p>At our core, we believe every journey is a story waiting to be told, every traveler a unique explorer. We are your one-stop travel destination, curating unforgettable experiences that celebrate diversity, discovery, and the joy of exploration. From serene escapes to exhilarating adventures, we bring the world closer to you with unmatched personalization and seamless planning. Rooted in innovation, authenticity, and inclusivity, we go beyond travel to provide resources, tools, and connections that inspire and enrich every step of your journey. Let's create memories that last a lifetime—because every adventure starts here. Whether it's uncovering hidden gems or revisiting timeless classics, we turn every destination into a dream fulfilled.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-plane-departure" id="icon"></i>
+                        <span>Seamless Bookings</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-map-marked-alt" id="icon"></i>
+                        <span>Personalized Itineraries</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-globe" id="icon"></i>
+                        <span>Global Destinations</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-phone-alt" id="icon"></i>
+                        <span>24/7 Travel Assistance</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--clothes section-->
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">Best-selling Packages</h3>
+        <h1 class="heading">It's the perfect time to wander!</h1>
+        <div class="box-container">     
+            <div class="box">
+                <img src="packages/HoneymoonTrip/India/goa_honeymoon.png" class="big-image-3" alt="">
+                <h3>Goa - Beach Bliss</h3>
+                <a href="honeymoon.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/CulturalExploration/International/rome_image.png" class="big-image-3" alt="">
+                <h3>Rome, Italy – The Eternal City</h3>
+                <a href="cultural.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/FamilyVacation/India/mysorer_image.png" class="big-image-3" alt="">
+                <h3>Mysuru - Cultural Splendor</h3>
+                <a href="family.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/FriendsTrip/International/dubai_image.png" class="big-image-3" alt="">
+                <h3>Dubai, UAE – City of Wonders</h3>
+                <a href="friends.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/FamilyVacation/International/new york.png" class="big-image-3" alt="">
+                <h3>New York, USA – City Never Sleeps</h3>
+                <a href="family.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/HoneymoonTrip/International/bali_honeymoon.png" class="big-image-3" alt="">
+                <h3>Bali, Indonesia – Tropical Paradise</h3>
+                <a href="honeymoon.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/FriendsTrip/India/rishikesh_image.png" class="big-image-3" alt="">
+                <h3>Rishikesh - Thrill and Chill</h3>
+                <a href="friends.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            <div class="box">
+                <img src="packages/WellnessAndSpaRetreat/India/allepey_image.png" class="big-image-3" alt="">
+                <h3>Alleppey, Kerala – Backwater Serenity</h3>
+                <a href="spa.html" class="btn" target="_blank">Explore!</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--deal of the day-->
+    <section class="deal" id="deal">
+        <h3 class="sub-heading">Deal of the year</h3>
+        <h1 class="heading">Grab your favourites package!</h1>
+        <div class="row">
+            <div class="content">
+                <span class="discount">Upto 35% off</span>
+                <h3 class="text">Christmas & New Year Special!</h3>
+                <div class="count-down">
+                    <div class="box">
+                        <h3 id="Days">00:</h3>
+                        <span>Days</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="Hours">00:</h3>
+                        <span>Hours</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="Minutes">00:</h3>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="Seconds">00</h3>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <a href="#dishes" class="btn">Explore now!</a>
+            </div>
+            <div class="image">
+                <img src="images/pic31.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!--Review section-->
+    <section class="review" id="review">
+        <h3 class="sub-heading">Traveller's Review</h3>
+        <h1 class="heading">What they say?</h1>
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic32.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Mohammed Riyas</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Booking with WanderWave was easy, and the entire trip was well-organized. The customer service was excellent. Highly recommend for anyone looking for a stress-free vacation.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic33.jpg" alt="">
+                        <div class="user-info">
+                            <h3>John Paul</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Our honeymoon package from WanderWave exceeded expectations. Great accommodations, fun activities, and attentive customer support. Everything was tailored to our wishes and needs.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic34.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Jain Merlin</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>WanderWave made our family vacation unforgettable. From seamless booking to fantastic hotels and activities, every detail was taken care of. Excellent service and great value for money.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic35.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Karthik Kumar</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>I recently booked a Adventure Package through WanderWave. The trip was flawless, with a great onboard amenities and well-planned excursions. The customer service exceeded my expectations.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic36.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Sriram Sundar</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>WanderWave has fantastic customer service. They were quick to answer all questions and helped us customize our trip. The trip itself was perfect, with smooth logistics and great accommodation.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic37.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Allen Sam</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>WanderWave made our vacation seamless from start to finish. Excellent hotels, transportation and exciting activities. The team took care of everything, allowing us to fully enjoy our trip.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic38.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Anchitha Raguvaran</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>WanderWave gave us wonderful travel experience by offering tailored recommendations. Entire trip was well-executed. It was a memorable vacation in my lifetime with lots of memories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Order section-->
+    <section class="order" id="order">
+        <h3 class="sub-heading">Instant & Simple</h3>
+        <h1 class="heading">Reserve your Trip Today!</h1>
+        <form id="bookingForm" action="">
+            <div class="inputbox">
+                <div class="input">
+                    <span>Your name</span>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="input">
+                    <span>Your number</span>
+                    <input type="tel" id="number" placeholder="Enter your phone number" pattern="[0-9]{10}">
+                </div>
+                <div class="input">
+                    <span>Your mail</span>
+                    <input type="email" id="email" placeholder="Enter your mail id">
+                </div>
+                <div class="input">
+                    <span>Chosen Package</span>
+                    <input type="text" id="package" placeholder="Enter package name">
+                </div>
+                <div class="input">
+                    <span>Chosen Category</span>
+                    <input type="text" id="category" placeholder="e.g, India or International">
+                </div>
+                <div class="input">
+                    <span>Chosen Destination</span>
+                    <input type="text" id="destination" placeholder="Enter Destination name">
+                </div>
+                <div class="input">
+                    <span>Number of persons</span>
+                    <input type="number" id="persons" placeholder="How many number of people?" min="1">
+                </div>
+                <div class="input">
+                    <span>Preferred Date</span>
+                    <input type="date" id="date">
+                </div>
+                <div class="input">
+                    <span>Your address</span>
+                    <textarea id="address" placeholder="Enter your address" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>Your Suggestions</span>
+                    <textarea id="suggestions" placeholder="Your thoughts go here" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Book Now!" class="btn">
+        </form>
+        
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="credit">
+            WanderWave Partners 
+            <span><a href="https://linkedin.com/in/sonasri-murugesan-5a682726b" target="_blank">Sonasri.Mu</a></span> and 
+            <span><a href="https://linkedin.com/in/preveen-s-17250529b/" target="_blank">Preveen.S</a></span>
+        </div>
+        
+    </section>
+
+    <!--Link to Swipper JS file-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--link to JS file-->
+    <script src="script.js"></script>
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq5f2e3c2dd18ed7b50708fd2ae9e0069685b9337b95aec9af55d05aad1293807b" defer></script>
+    </body>
+ </html>

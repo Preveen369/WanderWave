@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family:'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+/* search bar */
+#search-form{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search-form.active{
+    top: 0;
+}
+
+#search-form #search-box{
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+
+#search-form #search-box::placeholder{
+    color: #eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color: var(--green);   
+}
+
+#search-form #close{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 4.5rem;
+}
+
+/* home section slider*/
+/* Section Padding */
+section {
+    padding: 2rem 9%;
+}
+
+/* Slider Slide */
+.home .home-slider .slide {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+}
+
+/* Alternating Background for Even Sections */
+section:nth-child(even) {
+    background: #eee;
+}
+
+/* Content Styling */
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+    text-align: justify;
+    margin-right: 7rem;
+}
+
+/* Title Styling */
+.home .home-slider .slide .content h3 {
+    color: var(--black);
+    font-size: 5.7rem;
+    text-align: left;
+}
+
+/* Paragraph Styling */
+.home .home-slider .slide .content p {
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+/* Image Styling */
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+/* Make Image 80% width and 60% height */
+.home .home-slider .slide .image img {
+    width: 80%;
+    height: 60%;
+}
+
+/* Button Styling */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    padding: .8rem 3rem;
+}
+
+/* Tablet View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .home .home-slider .slide {
+        flex-direction: row-reverse; /* Content on left, image on right */
+        text-align: left;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .home .home-slider .slide .image img {
+        width: 40%; /* Reduce image width */
+        height: 30%; /* Keep image height consistent */
+    }
+
+    .home .home-slider .slide .content {
+        flex: 1 1 100%; /* Allow content to take full width */
+        margin-right: 0;
+    }
+
+    /* Adjust title font size for tablet */
+    .home .home-slider .slide .content h3 {
+        font-size: 4rem;
+    }
+
+    /* Adjust paragraph font size for tablet */
+    .home .home-slider .slide .content p {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust button font size for tablet */
+    .btn {
+        font-size: 1.5rem;
+        padding: .6rem 2.5rem;
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .home .home-slider .slide {
+        flex-direction: column; /* Stack content and image vertically */
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .home .home-slider .slide .image img {
+        width: 60%; /* Reduce image width further */
+        height: 50%; /* Adjust height to maintain aspect ratio */
+    }
+
+    .home .home-slider .slide .content {
+        flex: 1 1 100%; /* Allow content to take full width */
+        margin-right: 0;
+        text-align: center; /* Center text */
+    }
+
+    /* Adjust title font size for mobile */
+    .home .home-slider .slide .content h3 {
+        font-size: 2rem;
+    }
+
+    /* Adjust paragraph font size for mobile */
+    .home .home-slider .slide .content p {
+        font-size: 1.6rem;
+    }
+
+    /* Adjust button font size for mobile */
+    .btn {
+        font-size: 1.3rem;
+        padding: .5rem 2rem;
+    }
+}
+
+/* Fix Slider Dots */
+.home .home-slider .slide .slick-dots {
+    position: absolute;
+    bottom: 10px; /* Place dots at the bottom of the slide */
+    width: 100%; /* Ensure dots span across the full width */
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Ensure dots are above the image */
+}
+
+.home .home-slider .slide .slick-dots li button {
+    background-color: #fff; /* Dot color */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.home .home-slider .slide .slick-dots li.slick-active button {
+    background-color: var(--green); /* Active dot color */
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+/*collections*/
+.pic4{
+    width: 430px;
+    height: 380px;
+}
+
+.pic5{
+    width: 430px;
+    height: 380px;
+}
+
+.pic6{
+    width: 430px;
+    height: 380px;
+}
+
+.pic7{
+    width: 430px;
+    height: 380px;
+}
+
+.pic8{
+    width: 430px;
+    height: 380px;
+}
+
+.pic9{
+    width: 430px;
+    height: 380px;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 4rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+}
+
+.dishes{
+    background-color: #f3f0f0;
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto); /* Ensures only 2 rows */
+    gap: 1rem;
+}
+
+.dishes .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.dishes .box-container .box img{
+    width: 100%; /* Ensure images fill their containers */
+    max-height: 380px; /* Limit height of images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.dishes .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.box:hover img {
+    opacity: 0.4; /* Makes the image dull on hover */
+}
+
+.hover-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #192a56;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Prevent interaction until hover */
+}
+
+.box:hover .hover-btn {
+    opacity: 1; /* Makes the button visible on hover */
+    pointer-events: auto; /* Enable interaction on hover */
+}
+
+.hover-btn:hover {
+    background-color: #14a14f; /* Slightly darker effect on hover */
+}
+
+
+/* about */
+.about{
+    background-color: #f3f0f0;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+}
+
+#icon{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--black);
+    font-size: 3rem;
+    padding: .5rem 0;
+    margin-left: 1rem;
+}
+
+.about .row .content p{
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background: #ececec;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+    margin-right: 2rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+/*clothes*/
+.menu{
+    background-color: #f3f0f0;
+}
+
+.menu .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.menu .box-container .box{
+    flex: 1 1 calc(25% - 20px); /* Each box takes up 25% of the container minus the gap */
+    box-sizing: border-box;
+    background-color: #ffffff; /* Light background for boxes */
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Optional border for each box */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.menu .box-container .box h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.menu .box-container .box:hover img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Image styling */
+.big-image-3 {
+    width: 200px; /* Make images responsive */
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+/*deal of the day */
+.deal{
+    background-color: #f3f0f0;
+}
+
+.deal .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    background: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.deal .row .content{
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
+
+.deal .row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.deal .row .image img{
+    width: 100%;
+}
+
+.deal .row .discount{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.deal .row .text{
+    font-size: 4rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.deal .row .count-down{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.deal .row .count-down h3{
+    color: var(--green);
+    font-size: 6rem;  
+}
+
+.deal .row .count-down span{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.review{
+    background-color: #f3f0f0;
+}
+
+.review .slide{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+.review .slide .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.review .slide .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slide .user h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user{
+    font-size: 1.3rem;
+    color: var(--green);
+}
+
+.review .slide p{
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: var(--light-color);
+}
+
+/*order section*/
+.order{
+    background-color: #f3f0f0;
+    padding-bottom: 10rem;
+}
+.order form{
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0, 0, 0, .2);
+    background: #ffffff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.order form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.order form .inputbox .input{
+    width: 49%;
+}
+
+.order form .inputbox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.order form .inputbox .input input,
+.order form .inputbox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.order form .inputbox .input input:focus,
+.order form .inputbox .input textarea:focus{
+    border: .1rem solid var(--green);
+
+}
+
+.order form .inputbox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.order form .btn{
+    margin-top: 0;
+}
+
+/* footer */
+
+.footer .credit{
+    text-align:center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    padding: .5rem;
+}
+
+.footer .credit span{
+    color: var(--green);
+}
+
+.footer .credit a{
+    color: var(--green);
+}
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+    .about .row{
+        padding: 5rem;
+    }
+    
+}
+
+@media (max-width:768px) {
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    /* search bar*/
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 4rem;
+    }
+    .about .row{
+        padding: 5rem;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    /*order*/
+    .order form .inputbox .input{
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .dishes .box-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        grid-template-rows: auto; /* Adjust rows automatically */
+    }
+
+    .dishes .box-container .box img{
+        width: 80%; /* Ensure images fill their containers */
+        max-height: 200px; /* Limit height of images */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+}
+
+/* For mobile (max width: 480px) */
+@media screen and (max-width: 480px) {
+    .dishes .box-container {
+        grid-template-columns: 1fr; /* 1 item per row */
+        grid-template-rows: auto; /* Adjust rows automatically */
+    }
+}
+
+
+/* Tablet View (max width: 768px) */
+@media screen and (max-width: 768px) {
+    .deal .row {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+
+    .deal .row .content, 
+    .deal .row .image {
+        flex: 1 1 100%; /* Full width for both content and image */
+        padding: 1rem;
+    }
+
+    .deal .row .image img {
+        width: 50%; /* Reduce image width to 50% */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .deal .row .text {
+        font-size: 3rem; /* Reduce text size */
+    }
+
+    .deal .row .count-down h3 {
+        font-size: 4rem; /* Reduce countdown size */
+    }
+
+    .deal .row .count-down span {
+        font-size: 1.2rem; /* Adjust span text size */
+    }
+}
+
+/* Mobile View (max width: 480px) */
+@media screen and (max-width: 480px) {
+    .deal .row {
+        flex-direction: column; /* Stack content vertically */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .deal .row .image img {
+        width: 50%; /* Reduce image width to 50% */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .deal .row .text {
+        font-size: 2.5rem; /* Further reduce text size */
+    }
+
+    .deal .row .count-down {
+        flex-direction: column; /* Stack countdown vertically */
+        gap: 1rem;
+    }
+
+    .deal .row .count-down h3 {
+        font-size: 3rem; /* Further reduce countdown size */
+    }
+
+    .deal .row .count-down span {
+        font-size: 1rem; /* Reduce span text size */
+    }
+}

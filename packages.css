@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family:'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333; /* Ensures consistent text color across the site */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem; /* Adds spacing between sections */
+}
+
+/* Section Styles */
+.section {
+    background-color: #f3f0f0;
+    padding: 2rem;
+    border-radius: 0.5rem; /* Softens the container edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color:#192a56; /* Adds a blue highlight to the title */
+    margin-bottom: 2rem;
+    background-color: #fff;
+    margin-top: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #259654; /* Adds a blue highlight to the title */
+    margin-bottom: 2rem;
+}
+
+/* India and International Sections */
+.india-section, .international-section {
+    width: 48%; /* Two-column layout for larger screens */
+    min-width: 300px; /* Ensures sections don’t shrink too much */
+}
+
+.destination {
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.5rem; /* Slightly increased padding for better spacing */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.destination img {
+    width: 70%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.destination h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: #0056b3; /* Slightly darker shade for readability */
+}
+
+.destination span{
+    color: #25b762;
+}
+.packages {
+    margin-top: 1rem;
+}
+
+.package {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+}
+
+.package:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.package h4 {
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+h5{
+    font-size: 0.9rem;
+    margin-top: 0.7rem;
+    color: #207a45;
+}
+
+.package-details {
+    display: none; /* Hide the package details initially */
+    margin-left: 20px;
+}
+
+
+.package p {
+    font-size: 0.8rem;
+    color: #39376b;
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1.5rem; /* Adjusts spacing for smaller screens */
+    }
+
+    .india-section, .international-section {
+        width: 100%; /* Full-width for smaller screens */
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem; /* Scales down title font size */
+    }
+
+    .destination img {
+        height: 200px; /* Adjusts image size for smaller screens */
+    }
+
+    .package h4 {
+        font-size: 1.4rem; /* Slightly smaller title for packages */
+    }
+
+    .package p {
+        font-size: 1rem; /* Smaller text for descriptions */
+    }
+}
