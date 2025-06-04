@@ -1,8 +1,8 @@
 # 🌍 WanderWave – A Travel Destination Web App
 
-![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)  
-![Tech](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS-orange.svg)  
-![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)  
+![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)
+![Tech](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS-orange.svg)
+![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 **WanderWave** is a static web application designed to showcase travel destinations, built using HTML, CSS, and JavaScript. It features a collection of travel packages categorized by themes like Adventure Seekers, Cultural Exploration, Family Vacation, Friends Trip, Honeymoon Trip, and Wellness & Spa Retreat. The app provides a visually rich experience with images and detailed descriptions for each travel package.
