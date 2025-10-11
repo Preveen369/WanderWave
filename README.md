@@ -27,9 +27,11 @@
 
 ---
 
-## 📽️ Project Demo Video
+## 📽️ Project Demo
 
-[demo_video](./demo_video/wanderwave_demo.mp4)
+Below is the project demo video of the **WanderWave** web interface:
+
+[Project Demo Video](https://jmp.sh/lkfpG1om)
 
 ---
 
