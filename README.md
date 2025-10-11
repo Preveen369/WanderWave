@@ -29,7 +29,7 @@
 
 ## 📽️ Project Demo Video
 
-
+[demo_video](./demo_video/wanderwave_demo.mp4)
 
 ---
 
